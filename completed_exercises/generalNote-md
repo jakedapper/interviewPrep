@@ -1,0 +1,25 @@
+HOW TO BUILD TWITTER type question
+
+-no right answer
+-every interviewer looking for a different answer - can ask, "twitter has a lot of features, is there anything you'd like me to focus on?"
+-focus is on data model
+-how would you build out a database? how to store tweets, users, etc.
+-dont mention specific technologies - ex. "I would use react and redux and node and express" - GOOD: "I would use a web framework that could render a list of tweets, something conndicive to mobile..."
+-draw stuff
+-talk
+-need to prove you can communicate complicated topics and voice what you're thinking
+-immedieately respond and try to get more insight and give them what you're thinking
+
+GENERAL STRATEGY
+
+Identify two or three core features
+-draw out what the basic interface looks like
+--here's where trending tweets go, here's suggeted users to follow, here's the feed of users tweets, here's where you can tweet, here's a search bar
+--talk about what happens when users use something - when you click, what the database does
+--identify and address difficulties
+--retweets, what tweets to show to user when they first log in (alogithms used, time space complexity, what to cache)
+--solutions for scaling
+--caching
+--deployment options
+--create a load balancer - randomly assigns user making request to one of many identical servers (scaled horizontally)
+--server architecture
