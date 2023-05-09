@@ -10,16 +10,16 @@ HOW TO BUILD TWITTER type question
 -need to prove you can communicate complicated topics and voice what you're thinking
 -immedieately respond and try to get more insight and give them what you're thinking
 
-GENERAL STRATEGY
+    GENERAL STRATEGY
 
-Identify two or three core features
--draw out what the basic interface looks like
---here's where trending tweets go, here's suggeted users to follow, here's the feed of users tweets, here's where you can tweet, here's a search bar
---talk about what happens when users use something - when you click, what the database does
---identify and address difficulties
---retweets, what tweets to show to user when they first log in (alogithms used, time space complexity, what to cache)
---solutions for scaling
---caching
---deployment options
---create a load balancer - randomly assigns user making request to one of many identical servers (scaled horizontally)
---server architecture
+    Identify two or three core features
+    -draw out what the basic interface looks like
+    --here's where trending tweets go, here's suggeted users to follow, here's the feed of users tweets, here's where you can tweet, here's a search bar
+    --talk about what happens when users use something - when you click, what the database does
+    --identify and address difficulties
+    --retweets, what tweets to show to user when they first log in (alogithms used, time space complexity, what to cache)
+    --solutions for scaling
+    --caching
+    --deployment options
+    --create a load balancer - randomly assigns user making request to one of many identical servers (scaled horizontally)
+    --server architecture

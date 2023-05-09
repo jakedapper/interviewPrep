@@ -144,6 +144,15 @@ class LinkedList {
     }
 
     for
+
+    reverse(){
+        let tail = this.getLast()
+        let temp = this.head
+        this.head = tail
+        tail = 
+        let next = temp.next
+
+    }
 }
 
 module.exports = { Node, LinkedList };
