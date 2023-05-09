@@ -164,3 +164,43 @@ function steps(n){
         console.log(stair)
     }
 }
+
+
+
+// coin change problem
+
+//given ann array of coins of different denominations, what is the the
+//minimum number of coinns used to get the desired amount
+
+function coinChange(coins, amount) {
+    const dp = new Array(amount + 1).fill(Infinity);
+    dp[0] = 0;
+  
+    for (let i = 1; i <= amount; i++) {
+      for (let coin of coins) {
+        if (coin <= i) {
+          dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+        }
+      }
+    }
+  
+    return dp[amount] === Infinity ? -1 : dp[amount];
+  }
+  
+//less efficient recursive solution
+  function coinChange(coins, amount) {
+    if (amount === 0) return 0;
+  
+    let minCoins = Infinity;
+  
+    for (let coin of coins) {
+      if (coin <= amount) {
+        let numCoins = coinChange(coins, amount - coin);
+        if (numCoins !== -1) {
+          minCoins = Math.min(minCoins, numCoins + 1);
+        }
+      }
+    }
+  
+    return minCoins === Infinity ? -1 : minCoins;
+  }
